@@ -34,7 +34,10 @@ class MainViewController: UIViewController {
             AnalyticsParameterContentType: "cont"
             ])
 
-        // Do any additional setup after loading the view.
+        Analytics.logEvent("share_image", parameters: [
+            "name": "Name",
+            "full_text": 2
+            ])
     }
 
 }
